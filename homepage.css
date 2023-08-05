@@ -59,6 +59,7 @@ aside {
   padding: 1%;
   flex-wrap: wrap;
 }
+
 .modern-h2 {
   font-size: 28px; /* Adjust the font size as per your preference */
   font-weight: bold;
@@ -67,14 +68,12 @@ aside {
   letter-spacing: 2px; /* Add some letter spacing for a modern feel */
   border-bottom: 3px solid #0C98BA; /* Add a colored underline to the title */
   padding-bottom: 10px; /* Adjust the spacing between the title and underline */
+  text-align: left;
   }
 
 
 
-a:hover {text-decoration:underline; color:navy;}
-a:focus {text-decoration:underline; color:navy;}
-
-#primary-menu li a::after {
+#primary-menu a::after {
   content: '';
   position: absolute;
   bottom: 30px;
@@ -86,8 +85,29 @@ a:focus {text-decoration:underline; color:navy;}
   transition: transform 0.2s ease; /* Add a smooth transition effect */
 }
 
-#primary-menu li a:hover::after,
-#primary-menu li a:focus::after {
+
+/* Style the links */
+.right-section a {
+  color: #000; /* Change the link color to your desired color */
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Add a transparent underline */
+  transition: border-bottom 0.2s ease; /* Smooth transition for the underline effect */
+}
+
+/* Apply the hover effect */
+.right-section a:hover,
+.right-section a:focus,
+.sections .custom-list a:hover,
+.sections .custom-list a:focus,
+.sections .highlight p a:focus,
+.sections .highlight p a:hover
+{
+  border-bottom: 2px solid #000; /* Change the color of the underline on hover/focus */
+  outline: none; /* Remove the default focus outline */
+}
+
+ #primary-menu li a:hover::after,
+ #primary-menu li a:focus::after{
   transform: scaleX(1); /* When hovered or focused, set the underline width to 100% */
 }
 
@@ -114,8 +134,9 @@ a:focus {text-decoration:underline; color:navy;}
 }
 
 /* Hover effect */
-.signup-button:hover {
-  opacity: 0.8;
+.signup-button:hover, .signup-button:focus {
+  outline: 3px solid #000000;
+  box-shadow: 0 0 10px #000000;
 }
 
 .sections {
@@ -145,4 +166,8 @@ border: none;
 color: #ffffff;
 padding: 10px 10px;
 font-size: 24px;
+}
+
+.footer_top li{
+color: #6a5eff;
 }
