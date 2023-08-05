@@ -1,0 +1,148 @@
+/* Style for border list */
+.firstbox {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid black;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px; 
+}
+
+/* Style for the list items within the 'custom-list' class */
+.custom-list li {
+  margin-bottom: 10px;
+  text-align: left;
+  list-style:none;
+}
+
+/* Style for the anchor links within the 'custom-list' class */
+.custom-list li a {
+  color: #6a5eff;
+  text-decoration: none;
+}
+
+/* Style for the anchor links within the 'custom-list' class when hovered */
+.custom-list li a:hover {
+  text-decoration: underline;
+}
+.highlight {
+  color: #6a5eff;
+  text-decoration: none;
+}
+.highlight:hover{
+  text-decoration: underline;
+}
+
+.mission-header {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+.right-section {
+  flex: 1;
+  max-width: 30%;
+  margin-left: 5em;
+}
+.main-content {
+  flex: 1;
+  max-width: 70%;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+.modern-h2 {
+  font-size: 28px; /* Adjust the font size as per your preference */
+  font-weight: bold;
+  color: #333; /* Set the desired text color */
+  text-transform: uppercase; /* Convert the text to uppercase */
+  letter-spacing: 2px; /* Add some letter spacing for a modern feel */
+  border-bottom: 3px solid #0C98BA; /* Add a colored underline to the title */
+  padding-bottom: 10px; /* Adjust the spacing between the title and underline */
+  }
+
+
+
+a:hover {text-decoration:underline; color:navy;}
+a:focus {text-decoration:underline; color:navy;}
+
+#primary-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0); /* Initially, set the underline to have zero width */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+#primary-menu li a:hover::after,
+#primary-menu li a:focus::after {
+  transform: scaleX(1); /* When hovered or focused, set the underline width to 100% */
+}
+
+
+/* CSS to center the button horizontally */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+/* CSS for the signup button */
+.signup-button {
+  padding: 20px 80px;
+  background-image: linear-gradient(90deg,#00B2BF 0,#98C21F 100%); /* Gradient background from teal to lime */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Hover effect */
+.signup-button:hover {
+  opacity: 0.8;
+}
+
+.sections {
+  padding: 1%;
+}
+
+
+#wp-custom-css body input[type="checkbox"],
+#wp-custom-css body input[type="radio"] {
+	padding: 10px!important;
+	border: 1px solid #979797;
+	margin-right: 5px;
+}
+
+#wp-custom-css body input[type="radio"] { 
+-moz-appearance: radio;
+-webkit-appearance: radio;
+}
+
+#wp-custom-css .slide_content_container p.description {
+	max-width: fit-content;
+}
+
+#wp-custom-css .mybutton {
+background-color: #4285f4;
+border: none;
+color: #ffffff;
+padding: 10px 10px;
+font-size: 24px;
+}
