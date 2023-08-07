@@ -8,12 +8,15 @@
   padding: 10px; 
 }
 
+
 /* Style for the list items within the 'custom-list' class */
 .custom-list li {
   margin-bottom: 10px;
   text-align: left;
   list-style:none;
 }
+
+
 
 /* Style for the anchor links within the 'custom-list' class */
 .custom-list li a {
@@ -170,4 +173,16 @@ font-size: 24px;
 
 .footer_top li{
 color: #6a5eff;
+}
+
+/* h1{
+  text-align: center;
+} */
+
+#registergolf {
+  text-align: center;
+}
+
+#registergolf a{
+  color: navy;
 }
