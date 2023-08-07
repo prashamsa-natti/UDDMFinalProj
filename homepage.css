@@ -183,6 +183,11 @@ color: #6a5eff;
   text-align: center;
 }
 
+.ihdf_solid_button:hover, .ihdf_solid_button:focus {
+  outline: 2px solid white;
+  box-shadow: 0 0 10px white;
+}
+
 #registergolf a{
   color: navy;
 }
